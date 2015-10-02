@@ -49,6 +49,11 @@
 				   })
 		}
 	</script>
+    <script>
+		window.onload = function() {
+		document.getElementById("I1").src="http://www.uneb.org.br/app/contato.php";
+		}
+	</script>
 </head> 
 <body onLoad="Site();">
 	<!-- Splash screen -->
@@ -66,11 +71,7 @@
         </div>
         <!-- FIM CABEÇALHO -->
         <div class="minus-shadow">
-            <!-- DIV COM CONTEUDO-->
-            <div id="conteudo">
-            <iframe src="http://www.uneb.org.br/app/contato.php" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
-            </div>
-            <!-- FIM DIV COM CONTEUDO--> 
+            <iframe id="I1" name="I1" frameborder="0" scrolling="auto" width="100%" height="450px" src=""></iframe>
         </div>  
         <div data-role="footer" data-position="fixed">
             <div class="footer-actions">
