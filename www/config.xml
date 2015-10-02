@@ -28,6 +28,12 @@
     <preference name="PaginationMode" value="unpaginated" />
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+  	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
     
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
