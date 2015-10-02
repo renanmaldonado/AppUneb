@@ -1,0 +1,22 @@
+.paginacao ul {
+display:block;
+font: bold 15px Arial, times, Serif;
+}
+ul li {
+display: inline;
+text-align: center;
+}
+ul li a {
+border:3px solid #9b59b6;
+color: #9b59b6;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+padding:10px 15px;
+transition: all 0.3s linear;
+}
+ul li a:hover {
+background: #9b59b6;
+color:#fff;
+}
+
