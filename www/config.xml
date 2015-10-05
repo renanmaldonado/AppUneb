@@ -28,17 +28,9 @@
     <preference name="PaginationMode" value="unpaginated" />
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
-<<<<<<< HEAD
-	
-	<gap:plugin name="cordova-plugin-whitelist" source="npm" /> 
 
-         
-=======
+  
 
-     <allow-intent href="http://*/*" />
-     <allow-intent href="https://*/*" />
-    
->>>>>>> c95b1ac3714ddaf2486d185785c4a1fcd3668086
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
@@ -105,5 +97,6 @@
     <allow-intent href="https://*/*" />
 	<allow-navigation href="http://www.uneb.org.br/*" />
 	<allow-navigation href="http://www.uneb.org.br/app/*" />
+	
 	
 </widget>
