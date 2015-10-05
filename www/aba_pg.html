@@ -40,19 +40,8 @@
 	<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
 	<script src="js/add2home.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
-    <script type="text/javascript">
-		function Site()
-			{
-				$.ajax({
-					   url: "http://www.google.com",
-					   context: document.body,
-					   error: function(jqXHR, exception) {window.location.href="aviso_internet.html";exit();},
-					   success: function(){}
-					   })
-			}
-	</script>
 </head> 
-<body onLoad="Site();">
+<body>
 	<!-- Splash screen -->
   	 <div id="splash"> 
 	   <img id="splash-bg" src="images/splash/splash-alternate.png" alt="splash image"/>

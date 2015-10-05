@@ -32,19 +32,8 @@
 	<script src="js/iphone-style-checkboxes.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript">
-		function Site()
-		{
-			$.ajax({
-				   url: "http://www.google.com",
-				   context: document.body,
-				   error: function(jqXHR, exception) {window.location.href="aviso_internet.html";exit();},
-				   success: function(){}
-				   })
-		}
-	</script>
 </head> 
-<body onLoad="Site();">
+<body>
 	<div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
         <!-- CABEÇALHO -->
         <div data-role="header" data-position="fixed">
