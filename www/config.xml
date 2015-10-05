@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.aplicativo.uneb"
@@ -28,13 +28,11 @@
     <preference name="PaginationMode" value="unpaginated" />
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
-	<preference name="OpenAllWhitelistURLsInWebView" value="true"/>
-	
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="android.permission.RECORD_AUDIO" />
-  	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-  	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+     <allow-intent href="http://*/*" />
+     <allow-intent href="https://*/*" />
+	 <allow-navigation href="http://www.uneb.org.br/*" />
+	 <allow-navigation href="http://www.uneb.org.br/app/*" />
     
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
