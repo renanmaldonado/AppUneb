@@ -30,7 +30,8 @@
     <preference name="DisallowOverscroll" value="true"/>
 	
 		    
-    <!-- Icones de cada plataforma -->
+    
+	<!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
 	<gap:platform name="ios" />
@@ -91,6 +92,7 @@
     <content src="index.html" />
 	
     <access origin="*" />
+	<access origin="*" onlyInBrowser="true" />
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
 
