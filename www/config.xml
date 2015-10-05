@@ -29,11 +29,7 @@
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
 
-     <allow-intent href="http://*/*" />
-     <allow-intent href="https://*/*" />
-	 <allow-navigation href="http://www.uneb.org.br/*" />
-	 <allow-navigation href="http://www.uneb.org.br/app/*" />
-    
+         
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
@@ -95,5 +91,11 @@
     <content src="index.html" />
 	
     <access origin="*" />
+	<access origin="http://www.uneb.org.br" />
+	
+	<allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+	<allow-navigation href="http://www.uneb.org.br/*" />
+	<allow-navigation href="http://www.uneb.org.br/app/*" />
 	
 </widget>
