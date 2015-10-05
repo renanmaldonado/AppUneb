@@ -91,5 +91,8 @@
     <content src="index.html" />
 	
     <access origin="*" />
+	<access origin="*://*.www.uneb.org.br/*"/>
+	<allow-navigation href="*://*.www.uneb.org.br/*"/>
+
 	
 </widget>
