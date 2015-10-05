@@ -32,8 +32,7 @@
 	
 	
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	<gap:plugin name="cordova-plugin-whitelist" source="npm" /> 
-    
+	    
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
