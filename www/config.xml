@@ -30,9 +30,7 @@
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
 	
-	
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	    
+		    
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
