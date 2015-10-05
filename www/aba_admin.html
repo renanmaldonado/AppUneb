@@ -37,23 +37,9 @@
 	<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
 	<script src="js/add2home.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
-    <script>
-	function Admin()
-	{		
-		var retorno;
-		var largura;
-		var altura;
-		
-		largura = ($(document).width()) - 20;
-		altura = ($(document).height()) -200;
-		
-		retorno = '<iframe src="dev.html" frameborder="0" scrolling="auto" width="' + largura + '" height="' + altura + '"></iframe>';
-		$('.teste').html(retorno);
-	}
-	</script>
 </head> 
 
-<body onLoad="Admin();">
+<body>
 	<!-- Splash screen -->
   	 <div id="splash"> 
 	   <img id="splash-bg" src="images/splash/splash-alternate.png" alt="splash image"/>
@@ -75,8 +61,7 @@
 		
 		
 		<div class="white-content-box" data-ajax="false">
-		  <div class="teste" align="center">
-           </div>
+		   <iframe src="dev.html" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
 		</div>
 	</div><!-- /content -->
         
