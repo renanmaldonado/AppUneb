@@ -8,6 +8,7 @@
 
 	<!-- Preferencias -->
     <preference name="Orientation" value="portrait" />
+	<preference name="stay-in-webview" value="true" />
     <preference name="target-device" value="handset" />
     <preference name="AllowInlineMediaPlayback" value="false" />
 	<preference name="EnableLocation" value="true" />
