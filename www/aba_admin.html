@@ -37,6 +37,11 @@
 	<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
 	<script src="js/add2home.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
+    <script type="text/javascript">
+   function openFrame(link) {
+       navigator.app.loadUrl(link, { 'openExternal' : true });
+   }
+</script>
 </head> 
 
 <body>
@@ -62,6 +67,7 @@
 		
 		<div class="white-content-box" data-ajax="false">
 		   <iframe src="dev.html" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
+           <a target="_blank" href="javascript:parent.openFrame('http://www.uneb.org.br')">Open Frame</a>
 		</div>
 	</div><!-- /content -->
         
