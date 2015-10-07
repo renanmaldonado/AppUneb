@@ -1,14 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version='1.0' encoding='utf-8'?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.aplicativo.uneb"
         versionCode = "15" 
-        version     = "1.5.1" >
+        version="1.0.0" >
 
 
 	<!-- Preferencias -->
     <preference name="Orientation" value="portrait" />
 	<preference name="stay-in-webview" value="true" />
+    <preference name="webviewbounce" value="true" />
     <preference name="target-device" value="handset" />
     <preference name="AllowInlineMediaPlayback" value="false" />
 	<preference name="EnableLocation" value="true" />
@@ -30,7 +31,10 @@
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
 	
-  
+	<gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.device-orientation" source="pgb" version="0.3.9" /> 
+    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
+ 
 	<!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
@@ -91,11 +95,13 @@
 	
     <content src="index.html" />
 	
-	<plugin name="cordova-plugin-whitelist" version="1" />
-    <access origin="*" />
+	<access origin="*" />
+	<access origin="*.uneb.*" />
+	<access origin="http://uneb.org.br" subdomains="true" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-	<allow-intent href="tel:*" />
+    <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
@@ -106,8 +112,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="^4.0.0" />
-    <plugin name="cordova-plugin-device" spec="^1.0.1" />
 
 	
 </widget>
