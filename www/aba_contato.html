@@ -37,12 +37,23 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<script src="js/iphone-style-checkboxes.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+            function Contato()
+            {		
+                var retorno;
+                var largura;
+                var altura;
+                
+                largura = ($(document).width()) - 20;
+                altura = ($(document).height()) -200;
+                
+                retorno = '<iframe src="http://www.uneb.org.br/app/contato.php" frameborder="0" scrolling="auto" width="' + largura + '" height="' + altura + '"></iframe>';
+                $('.reporter').html(retorno);
+            }
+        </script>
 </head> 
 <body>
 	<!-- Splash screen -->
@@ -58,9 +69,8 @@
             </div>
             <h1><p class="no-margin">Fale conosco</p></h1>
         </div>
-        <!-- FIM CABEÇALHO -->
         <div class="minus-shadow">
-    		<iframe src="http://www.uneb.org.br/app/contato.php" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="150%" width="150%"></iframe>
+        	<div class="reporter" align="center"></div>
         </div>  
         <div data-role="footer" data-position="fixed">
             <div class="footer-actions">
