@@ -40,20 +40,6 @@
 	<script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/jquery.js"></script>
-    <script>
-            function Contato()
-            {		
-                var retorno;
-                var largura;
-                var altura;
-                
-                largura = ($(document).width()) - 20;
-                altura = ($(document).height()) -200;
-                
-                retorno = '<iframe src="http://www.uneb.org.br/app/contato.php" frameborder="0" scrolling="auto" width="' + largura + '" height="' + altura + '"></iframe>';
-                $('.reporter').html(retorno);
-            }
-        </script>
 </head> 
 <body>
 	<!-- Splash screen -->
@@ -70,7 +56,7 @@
             <h1><p class="no-margin">Fale conosco</p></h1>
         </div>
         <div class="minus-shadow">
-        	<div class="reporter" align="center"></div>
+       		<iframe src="http://www.uneb.org.br/app/contato.php" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
         </div>  
         <div data-role="footer" data-position="fixed">
             <div class="footer-actions">
