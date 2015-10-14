@@ -1,113 +1,86 @@
 <!DOCTYPE html> 
 <html> 
-	<head> 
-	<title>UNEB</title> 
-	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />	
+<head> 
+<title>UNEB</title> 
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="msapplication-tap-highlight" content="no" />
 
-	<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
-	<!-- For iPhone 4 with high-resolution Retina display: -->
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon.png">
-	<!-- For first-generation iPad: -->
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon.png">
-	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-	<link rel="apple-touch-icon-precomposed" href="images/icon.png">
-	<!-- For nokia devices: -->
-	<link rel="shortcut icon" href="images/icon.png">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" />
+<link rel="stylesheet" href="css/themes/default/RSVmain.min.css" />
+<link rel="stylesheet" href="css/themes/default/jquery.mobile.structure-1.1.1.min.css" />
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/photoswipe.css">
+<link rel="stylesheet" href="css/add2home.css">
+<link rel="stylesheet/less" href="css/style.css">
 
+ <!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" />
-	<link rel="stylesheet" href="css/themes/default/RSVmain.min.css" />
-	<link rel="stylesheet" href="css/themes/default/jquery.mobile.structure-1.1.1.min.css" />
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/photoswipe.css">
-	<link rel="stylesheet" href="css/add2home.css">
-    <link rel="stylesheet/less" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery-ui-1.8.24.custom.min.js"></script>
 
-	 <!-- fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-	
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery-ui-1.8.24.custom.min.js"></script>
-	
-	<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
-    <script type="text/javascript" src="js/less-1.3.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/less-1.3.0.min.js"></script>
 
-	<script src="js/helper.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/iphone-style-checkboxes.js"></script>
-	<script src="js/klass.min.js"></script>
-	<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
-	<script src="js/add2home.js"></script>
-	<script type="text/javascript" src="js/app.js?v=30"></script>
-     <script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-    <meta charset="utf-8">
+<script src="js/helper.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/iphone-style-checkboxes.js"></script>
+<script src="js/klass.min.js"></script>
+<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+<script src="js/add2home.js"></script>
+<script type="text/javascript" src="js/app.js?v=30"></script>
+ <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
 </head> 
 
 <body>
-	<!-- Splash screen -->
-  	 <div id="splash"> 
-	   <img id="splash-bg" src="images/splash/splash-alternate.png" alt="splash image"/>
-	   <img id="splash-title" src="images/splash/main.png" alt="splash title" />
-	 </div> 
-  <div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
+<div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
 	<div data-role="header" data-position="fixed">
             <div class="left">
                 <a href="index.html" class="showMenu menu-button"><img src="images/menu-button.png" width="16" /></a>
             </div>
-            <h1>
-              <p class="no-margin">O que Sou</p>
-            <p class="no-margin">&nbsp;</p></h1>
-            
+            <h1><p class="no-margin">O que Sou</p></h1>
 	</div>
-        
-        <!-- /header -->
+    <!-- /header -->
     
 	<div data-role="content" data-theme="a" class="minus-shadow">
-		
-		
 		<div class="white-content-box">
-		<h3>O que Sou</h3>
-		<div data-role="collapsible-set" data-theme="a" data-content-theme="a" data-mini="true">
-			<div data-role="collapsible">
-				<h3>O que é um Pequeno Grupo</h3>
-				<p style="text-align:justify;">O Pequeno Grupo é um grupo de pessoas que se reúne semanalmente sob a coordenação de um líder visando o crescimento espiritual, relacional e evangelístico, objetivando sua multiplicação.</p>
-                <p style="text-align:justify;"> O Pequeno Grupo é um plano vivenciado no Antigo e Novo Testamentos, que nasceu no coração de Deus, para todas as igrejas – grandes e pequenas, para todos os segmentos da igreja, foi o modelo da igreja adventista em seus primórdios, que propiciará um ambiente para o pastoreio e o desenvolvimento espiritual dos membros.</p>
-			    <p style="text-align:justify;font-weight:800;font-style:italic;">“Vi os santos deixarem as cidades, e vilas, reunirem-se em grupos e viverem nos lugares mais solitários da Terra. Anjos lhes proviam alimento e água, enquanto os ímpios estavam a sofrer fome e sede. Vi então os principais homens da Terra consultando entre si, e Satanás e seus anjos ocupados em redor deles. Vi um impresso, espalhado nas diferentes partes da Terra, dando ordens para que se concedesse ao povo liberdade para, depois de certo tempo, matar os santos, a menos que estes renunciassem a sua fé estranha, abandonassem o sábado e guardassem o primeiro dia da semana”. PE. pág. 282.</p>
-                <p style="text-align:justify;">Sugerimos a formação e desenvolvimento do Pequeno Grupo como a estrutura que proporcionará: atendimento pastoral, comunidade relacional e mobilização dos membros para o cumprimento da missão em todo o território da União Nordeste Brasileira da Igreja Adventista do Sétimo dia.</p>
+			<h3>O que Sou</h3>
+            <div data-role="collapsible-set" data-theme="a" data-content-theme="a" data-mini="true">
+                <div data-role="collapsible">
+                    <h3>O que é um Pequeno Grupo</h3>
+                    <p style="text-align:justify;">O Pequeno Grupo é um grupo de pessoas que se reúne semanalmente sob a coordenação de um líder visando o crescimento espiritual, relacional e evangelístico, objetivando sua multiplicação.</p>
+                    <p style="text-align:justify;"> O Pequeno Grupo é um plano vivenciado no Antigo e Novo Testamentos, que nasceu no coração de Deus, para todas as igrejas – grandes e pequenas, para todos os segmentos da igreja, foi o modelo da igreja adventista em seus primórdios, que propiciará um ambiente para o pastoreio e o desenvolvimento espiritual dos membros.</p>
+                    <p style="text-align:justify;font-weight:800;font-style:italic;">“Vi os santos deixarem as cidades, e vilas, reunirem-se em grupos e viverem nos lugares mais solitários da Terra. Anjos lhes proviam alimento e água, enquanto os ímpios estavam a sofrer fome e sede. Vi então os principais homens da Terra consultando entre si, e Satanás e seus anjos ocupados em redor deles. Vi um impresso, espalhado nas diferentes partes da Terra, dando ordens para que se concedesse ao povo liberdade para, depois de certo tempo, matar os santos, a menos que estes renunciassem a sua fé estranha, abandonassem o sábado e guardassem o primeiro dia da semana”. PE. pág. 282.</p>
+                    <p style="text-align:justify;">Sugerimos a formação e desenvolvimento do Pequeno Grupo como a estrutura que proporcionará: atendimento pastoral, comunidade relacional e mobilização dos membros para o cumprimento da missão em todo o território da União Nordeste Brasileira da Igreja Adventista do Sétimo dia.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Faça Parte de um Pequeno Grupo</h3>
+                    <p style="text-align:justify;">Pense em um grupo de bons amigos que têm um encontro marcado uma vez por semana. O lugar não é tão importante; pode ser em casa de algum deles ou um parque bonito da cidade, mas o que não pode faltar é a alegria de compartilhar bons momentos, experiências e risadas junto a pessoas que se preocupam umas com outras. Isto é um Pequeno Grupo; é amizade, é relacionamento, é conhecer o amor de Jesus a través do amor dos meus amigos, é levar os meus amigos a Jesus.</p>
+                    <p style="text-align:justify;">Dentro de um Pequeno Grupo as pessoas também são motivadas a orar umas pelas outras, estudar detalhadamente a Bíblia, compartilhar experiências da vida ao lado de Cristo e convidar novos amigos a participar também.</p>
+                </div>
             </div>
-			<div data-role="collapsible">
-				<h3>Faça Parte de um Pequeno Grupo</h3>
-				<p style="text-align:justify;">Pense em um grupo de bons amigos que têm um encontro marcado uma vez por semana. O lugar não é tão importante; pode ser em casa de algum deles ou um parque bonito da cidade, mas o que não pode faltar é a alegria de compartilhar bons momentos, experiências e risadas junto a pessoas que se preocupam umas com outras. Isto é um Pequeno Grupo; é amizade, é relacionamento, é conhecer o amor de Jesus a través do amor dos meus amigos, é levar os meus amigos a Jesus.</p>
-                <p style="text-align:justify;">Dentro de um Pequeno Grupo as pessoas também são motivadas a orar umas pelas outras, estudar detalhadamente a Bíblia, compartilhar experiências da vida ao lado de Cristo e convidar novos amigos a participar também.</p>
-			</div>
-		</div>
 	    </div>
-
-
 	</div><!-- /content -->
-        
-        <div class="bread-crumb">
-            <ul>
-                <li><a data-transition="pop" href="index.html"><img src="images/bc-home.png" width="16" /></a></li>
-                <li><span>Portfolio</span></li>
-            </ul>
+
+    <div data-role="footer" data-position="fixed">
+        <div class="footer-actions">
+            <a href="index.html"><img src="images/icons/home1.png"><p>Inicio</p></a>
+            <a href="aba_est.html"><img src="images/icons/statistics.png"><p>Estatistica</p></a>
+            <a href="aba_contato.html"><img src="images/icons/contact.png"><p>Contato</p></a>
+            <a href="dev.html" data-rel="dialog" data-transition="pop"><img src="images/icons/gear.png"><p>Sobre</p></a>
+          <div class="clear"></div>
         </div>
-        <div data-role="footer" data-position="fixed">
-    <div class="footer-actions">
-        <a href="index.html"><img src="images/icons/home1.png"><p>Inicio</p></a>
-        <a href="aba_est.html"><img src="images/icons/statistics.png"><p>Estatistica</p></a>
-        <a href="aba_contato.html"><img src="images/icons/contact.png"><p>Contato</p></a>
-        <a href="dev.html" data-rel="dialog" data-transition="pop"><img src="images/icons/gear.png"><p>Sobre</p></a>
-      <div class="clear"></div>
-    </div>
-    <div class="clear"></div>
-</div></div><!-- /page -->
+        <div class="clear"></div>
+   </div>
+</div><!-- /page -->
 </body>
 </html>

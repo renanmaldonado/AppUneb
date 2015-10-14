@@ -2,20 +2,11 @@
 <html> 
 <head> 
 <title>UNEB</title> 
-<meta charset="iso-8859-1">
-<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />	
-
-<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
-<!-- For iPhone 4 with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon.png">
-<!-- For first-generation iPad: -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon.png">
-<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-<link rel="apple-touch-icon-precomposed" href="images/icon.png">
-<!-- For nokia devices: -->
-<link rel="shortcut icon" href="images/icon.png">
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="msapplication-tap-highlight" content="no" />
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" />
@@ -46,58 +37,28 @@
 <script type="text/javascript">
         app.initialize();
 </script>
-<script>
-    var xmlhttp = new XMLHttpRequest();
-    var url = "http://localhost/aplicativos/uneb/www/json/des.php";
-    
-    xmlhttp.onreadystatechange=function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            myFunction(xmlhttp.responseText);
-        }
-    }
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-    
-    function myFunction(response) {
-        var arr = JSON.parse(response);
-        var i;
-    
-        for(i = 0; i < arr.length; i++) {
-            out = "<h2>O que faço no mês de " + arr[i].mes + " / " + arr[i].ano +" </h2>";
-            out += "<p style='font-size:16px;text-align:justify;'>" + arr[i].texto + "</p>";
-        }
-        document.getElementById("desafio").innerHTML = out;
-    }
-</script>
 </head> 
 <body>
-	<!-- Splash screen -->
-  	 <div id="splash"> 
-	   <img id="splash-bg" src="images/splash/splash-alternate.png" alt="splash image"/>
-	   <img id="splash-title" src="images/splash/main.png" alt="splash title" />
-	 </div> 
-  	<!-- end splash screen -->
-	
-	<div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
-        <div data-role="header" data-position="fixed">
-                <div class="left">
-                    <a href="index.html" class="showMenu menu-button"><img src="images/menu-button.png" width="16" /></a>
-                </div>
-                <h1><p class="no-margin">O que fa&ccedil;o</p></h1>
+<div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <div class="left">
+            <a href="index.html" class="showMenu menu-button"><img src="images/menu-button.png" width="16" /></a>
         </div>
-        <div data-role="content" data-theme="a" class="minus-shadow">
-            <div class="white-content-box">
-                <div id="desafio"></div>
-            </div>
+        <h1><p class="no-margin">O que fa&ccedil;o</p></h1>
+    </div>
+    <div data-role="content" data-theme="a" class="minus-shadow">
+        <div class="white-content-box">
+            <iframe src="http://www.uneb.org.br/app/desafio.html" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="150%" width="150%"></iframe>
         </div>
-        <div data-role="footer" data-position="fixed">
-            <div class="footer-actions">
-                <a href="index.html"><img src="images/icons/home1.png"><p>Inicio</p></a>
-                <a href="aba_est.html"><img src="images/icons/statistics.png"><p>Estatistica</p></a>
-                <a href="aba_contato.html"><img src="images/icons/contact.png"><p>Contato</p></a>
-                <a href="dev.html" data-rel="dialog" data-transition="pop"><img src="images/icons/gear.png"><p>Sobre</p></a>
-            </div>
-		</div>
-	</div><!-- /page -->
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div class="footer-actions">
+            <a href="index.html"><img src="images/icons/home1.png"><p>Inicio</p></a>
+            <a href="aba_est.html"><img src="images/icons/statistics.png"><p>Estatistica</p></a>
+            <a href="aba_contato.html"><img src="images/icons/contact.png"><p>Contato</p></a>
+            <a href="dev.html" data-rel="dialog" data-transition="pop"><img src="images/icons/gear.png"><p>Sobre</p></a>
+        </div>
+    </div>
+</div><!-- /page -->
 </body>
 </html>
