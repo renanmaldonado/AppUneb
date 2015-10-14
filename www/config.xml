@@ -25,8 +25,6 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
@@ -34,14 +32,19 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="FadeSplashScreen" value="true" />
     <preference name="FadeSplashScreenDuration" value=".25" />
-    
+	<preference name="SplashScreen"  value="screen" / > 
+	<preference name="SplashScreenDelay"   value="1000"   / > 
+	
+   
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.device-motion" source="pgb" version="0.2.10" />
     <gap:plugin name="org.apache.cordova.device-orientation" source="pgb" version="0.3.9" />
     <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+	
 
-     <!-- Icones de cada plataforma -->
+    <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
 	
 	<gap:platform name="ios" />
