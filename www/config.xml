@@ -44,6 +44,7 @@
 
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
+	
 		
     <!-- IOS -->
     <icon src="res/icon/ios/icon-57.png"    gap:platform="ios"  	width="57" height="57" />
