@@ -59,7 +59,6 @@
     <icon src="res/icons/icon-96-xhdpi.png"	gap:platform="android"	gap:qualifier="xhdpi" />
 
     <!-- Splashes de cada plataforma -->
-	
 	<gap:splash src="res/splash.png" />
 
 	<platform name="ios">
