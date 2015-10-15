@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.aplicativo.uneb"
         versionCode = "10" 
-        version     = "1.0.1" >
+        version     = "1.0.6" >
 		
     <name>Lideres de Esperança</name>
     <description>
@@ -12,51 +12,89 @@
     <author email="contato@rdorval.com" href="http://rdorval.com">
         RDORVAL SOLUCOES EM TECNOLOGIA
     </author>
+	
     <content src="index.html" />
-    <preference name="permissions" value="none" />
-    <preference name="orientation" value="default" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="true" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-installLocation" value="auto" />
-	<preference name="ShowSplashScreenSpinner" value="true" />
-	<preference name="AutoHideSplashScreen" value="true" />
-	<preference name="FadeSplashScreen" value="true" />
+    
+	<preference name="permissions" value="none" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+	<preference name="EnableLocation" value="true" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
     <preference name="FadeSplashScreenDuration" value=".25" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+	<preference name="Fullscreen" value="true" />
+    <preference name="DisallowOverscroll" value="true"/>
+	    
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
-    <gap:plugin name="org.apache.cordova.device-motion" source="pgb" version="0.2.10" />
-    <gap:plugin name="org.apache.cordova.device-orientation" source="pgb" version="0.3.9" />
     <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
+	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
 
-    <icon src="res/icon.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
-    <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
-    <icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
-    <icon gap:platform="ios" height="114" src="www/res/icon/ios/icon-57-2x.png" width="114" />
-    <icon gap:platform="ios" height="144" src="www/res/icon/ios/icon-72-2x.png" width="144" />
-    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
-    <gap:splash gap:platform="ios" height="480" src="www/res/screen/ios/screen-iphone-portrait.png" width="320" />
-    <gap:splash gap:platform="ios" height="960" src="www/res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
-    <gap:splash gap:platform="ios" height="1136" src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
-    <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
-    <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
-    <access origin="*" />
+    <!-- Icones de cada plataforma -->
+	<icon src="res/icon.png" />
+		
+    <!-- IOS -->
+    <icon src="res/icon/ios/icon-57.png"    gap:platform="ios"  	width="57" height="57" />
+    <icon src="res/icon/ios/icon-72.png"    gap:platform="ios"  	width="72" height="72" />
+	<icon src="res/icon/ios/icon-57-2x.png"   gap:platform="ios"  	width="114" height="114" />
+	<icon src="res/icon/ios/icon-72-2x.png"   gap:platform="ios"  	width="144" height="144" />
+
+	<!-- Android -->
+    <icon src="res/icon/android/icon-36-ldpi.png"	gap:platform="android"  gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"	gap:platform="android"  gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"	gap:platform="android"  gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"	gap:platform="android"	gap:qualifier="xhdpi" />
+
+    <!-- Splashes de cada plataforma -->
+	
+	<gap:splash src="res/splash.png" />
+
+	<platform name="ios">
+    <!-- images are determined by width and height. The following are supported -->
+    <splash src="res/screen/ios/screen-iphone-portrait.png" width="320" height="480"/>
+    <splash src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" height="960"/>
+    <splash src="res/screen/ios/screen-ipad-portrait.png" width="768" height="1024"/>
+    <splash src="res/screen/ios/1536-2048.png" width="1536" height="2048"/>
+    <splash src="res/screen/ios/screen-ipad-landscape.png" width="1024" height="768"/>
+    <splash src="res/screen/ios/2048-1536.png" width="2048" height="1536"/>
+    <splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136"/>
+	</platform>
+	
+	<!-- Android -->
+	<platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
+    <splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
+
+    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+	</platform>
+	
+	<!-- Windows 8 -->
+	<platform name="windows8">
+    <!-- images are determined by width and height. The following are supported -->
+    <splash src="res/screen/windows8/win8.png" width="620" height="300"/>
+	</platform>
+	
+	<preference name="SplashScreenDelay" value="1000" />
+	
+	<access origin="*" />
 	<plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
