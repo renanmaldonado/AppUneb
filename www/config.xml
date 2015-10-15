@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.aplicativo.uneb"
         versionCode = "10" 
-        version     = "1.0.6" >
+        version     = "1.0.7" >
 		
     <name>Lideres de Esperança</name>
     <description>
@@ -36,6 +36,7 @@
     <preference name="PaginationMode" value="unpaginated" />
 	<preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true"/>
+	<preference name="SplashScreenDelay" value="1000" />
 	    
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
@@ -44,7 +45,6 @@
 
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
-	
 		
     <!-- IOS -->
     <icon src="res/icon/ios/icon-57.png"    gap:platform="ios"  	width="57" height="57" />
@@ -86,14 +86,6 @@
     <splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
     <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
 	</platform>
-	
-	<!-- Windows 8 -->
-	<platform name="windows8">
-    <!-- images are determined by width and height. The following are supported -->
-    <splash src="res/screen/windows8/win8.png" width="620" height="300"/>
-	</platform>
-	
-	<preference name="SplashScreenDelay" value="1000" />
 	
 	<access origin="*" />
 	<plugin name="cordova-plugin-whitelist" version="1" />
