@@ -3,11 +3,8 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.aplicativo.uneb"
         versionCode = "10" 
-<<<<<<< HEAD
-        version     = "1.0.10" >
-=======
-        version     = "1.0.9" >
->>>>>>> origin/master
+        version     = "1.0.11" >
+
 		
     <name>Lideres de Esperança</name>
     <description>
@@ -63,10 +60,6 @@
     <icon src="res/icons/icon-96-xhdpi.png"	gap:platform="android"	gap:qualifier="xhdpi" />
 
     <!-- Splashes de cada plataforma -->
-<<<<<<< HEAD
-	
-=======
->>>>>>> origin/master
 	<gap:splash src="res/splash.png" />
 
 	<platform name="ios">
