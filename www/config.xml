@@ -44,6 +44,8 @@
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
 	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
+	
+	
 
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
