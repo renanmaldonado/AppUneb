@@ -267,7 +267,7 @@ body {
 }
 
 .ui-header {
-    background: @whiteColor !important;
+    background: #696069 !important;
     color: @typoColor;
     text-shadow: none;
     border: 1px solid @grayColor;
@@ -275,9 +275,10 @@ body {
     
     
     h1.ui-title {
-        margin: 10px 20% !important;
+        margin: 18px 20% !important;
         text-transform: uppercase;
-	color: @color2;
+	color: #FFFFFF;
+	font-weight:600;
 	
         p {
             font-size: 12px;
@@ -413,7 +414,7 @@ body {
       }
     }
     h2 {
-        color: @typoColor;
+        color: #000000;
 		background: @whiteColor;
 		
 		font-size: 20px;
@@ -1029,7 +1030,7 @@ form.designed {
             margin-bottom: 4px;
         }
         span {
-            color: @themeColor;
+            color: #1e1916;
             display: block;
             font-weight: 800;
             position: absolute;

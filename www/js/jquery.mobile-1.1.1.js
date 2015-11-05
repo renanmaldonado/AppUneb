@@ -1288,13 +1288,13 @@ $.widget( "mobile.widget", {
 		loadingMessage: "loading",
 
 		// Error response message - appears when an Ajax page request fails
-		pageLoadErrorMessage: "Error Loading Page",
+		pageLoadErrorMessage: "Erro ao carregar página",
 
 		// Should the text be visble in the loading message?
-		loadingMessageTextVisible: false,
+		loadingMessageTextVisible: true,
 
 		// When the text is visible, what theme does the loading box use?
-		loadingMessageTheme: "a",
+		loadingMessageTheme: "b",
 
 		// For error messages, which theme does the box uses?
 		pageLoadErrorMessageTheme: "e",
