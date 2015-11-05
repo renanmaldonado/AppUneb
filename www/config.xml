@@ -41,9 +41,9 @@
 	<preference name="SplashScreenDelay" value="1000" />
 	    
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
-    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
-    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
-	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
+    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.3.0" />
+    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.15" />
+	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="1.0.0" />
 	
 	
 
