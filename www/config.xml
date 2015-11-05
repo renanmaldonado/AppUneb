@@ -3,9 +3,11 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.aplicativo.uneb"
         versionCode = "10" 
-        version     = "1.0.10">
-        
-
+<<<<<<< HEAD
+        version     = "1.0.10" >
+=======
+        version     = "1.0.9" >
+>>>>>>> origin/master
 		
     <name>Lideres de Esperança</name>
     <description>
@@ -41,11 +43,9 @@
 	<preference name="SplashScreenDelay" value="1000" />
 	    
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
-    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.3.0" />
-    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.15" />
-	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="1.0.0" />
-	
-	
+    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
+	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
 
     <!-- Icones de cada plataforma -->
 	<icon src="res/icon.png" />
@@ -63,9 +63,10 @@
     <icon src="res/icons/icon-96-xhdpi.png"	gap:platform="android"	gap:qualifier="xhdpi" />
 
     <!-- Splashes de cada plataforma -->
-
+<<<<<<< HEAD
 	
-
+=======
+>>>>>>> origin/master
 	<gap:splash src="res/splash.png" />
 
 	<platform name="ios">

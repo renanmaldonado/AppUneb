@@ -4,7 +4,6 @@
 	<title>UNEB</title> 
     <meta charset="utf-8">
     <meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" />
 	<link rel="stylesheet" href="css/themes/default/RSVmain.min.css" />
@@ -12,7 +11,6 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/photoswipe.css">
 	<link rel="stylesheet" href="css/add2home.css">
-    <link rel="stylesheet/less" href="css/style.css">
     <link rel="stylesheet/less" href="css/style.css">
 	 <!-- fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
@@ -31,19 +29,8 @@
 	<script type="text/javascript" src="js/app.js?v=30"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-		function Site()
-		{
-			$.ajax({
-				   url: "http://www.google.com",
-				   context: document.body,
-				   error: function(jqXHR, exception) {window.location.href="aviso_internet.html";exit();},
-				   success: function(){}
-				   })
-		}
-	</script>
 </head> 
-<body onLoad="Site();">
+<body>
 </head> 
 <body>
     <div data-cache="never" data-role="page" class="pages" id="home" data-theme="a">

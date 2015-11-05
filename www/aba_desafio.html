@@ -37,8 +37,19 @@
 <script type="text/javascript">
         app.initialize();
 </script>
+<script type="text/javascript">
+		function Site()
+		{
+			$.ajax({
+				   url: "http://www.google.com",
+				   context: document.body,
+				   error: function(jqXHR, exception) {window.location.href="aviso_internet.html";exit();},
+				   success: function(){}
+				   })
+		}
+	</script>
 </head> 
-<body>
+<body onLoad="Site();">
 <div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
     <div data-role="header" data-position="fixed">
         <div class="left">
@@ -46,10 +57,8 @@
         </div>
         <h1>O que fa&ccedil;o</h1>
     </div>
-    <div data-role="content" data-theme="a" class="minus-shadow">
-        <div class="white-content-box">
-            <iframe src="http://www.uneb.org.br/app/desafio.html" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
-        </div>
+    <div class="minus-shadow">
+        <iframe src="http://www.uneb.org.br/app/desafio.html" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
     </div>
     <div data-role="footer" data-position="fixed">
         <div class="footer-actions">
