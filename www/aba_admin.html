@@ -1,8 +1,11 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-<title>UNEB</title> 
+<title>UNEB</title>
 <meta charset="utf-8" />
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" /> 
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -13,11 +16,8 @@
 <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" />
 <link rel="stylesheet" href="css/themes/default/RSVmain.min.css" />
 <link rel="stylesheet" href="css/themes/default/jquery.mobile.structure-1.1.1.min.css" />
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/photoswipe.css">
-<link rel="stylesheet" href="css/add2home.css">
 <link rel="stylesheet/less" href="css/style.css">
-<link rel="stylesheet" href="css/estilo.css">
+
  <!-- fonts -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
@@ -27,15 +27,10 @@
 <script src="js/helper.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/iphone-style-checkboxes.js"></script>
-<script src="js/klass.min.js"></script>
-<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
-<script src="js/add2home.js"></script>
 <script type="text/javascript" src="js/app.js?v=30"></script>
- <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">
-    app.initialize();
-</script>
+<script src="js/jquery.js"></script>
 <script type="text/javascript">
 		function Site()
 		{
@@ -48,15 +43,14 @@
 		}
 	</script>
 </head> 
-
 <body onLoad="Site();">
 <div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
-	<div data-role="header" data-position="fixed">
+    <div data-role="header" data-position="fixed">
         <div class="left">
             <a href="index.html" class="showMenu menu-button"><img src="images/back-button.png" width="28" /></a>
         </div>
-        <h1>Gerenciamento</h1>
-	</div>
+        <h1>Acesso restrito</h1>
+    </div>
     <div class="minus-shadow">
         <iframe src="http://www.uneb.org.br/app/login.php" frameborder="0" scrolling="auto" width="100%" height="450px"></iframe>
     </div>  
@@ -66,10 +60,10 @@
             <a href="aba_est.html"><img src="images/icons/statistics.png"><p>Estatistica</p></a>
             <a href="aba_contato.html"><img src="images/icons/contact.png"><p>Contato</p></a>
             <a href="dev.html" data-rel="dialog" data-transition="pop"><img src="images/icons/gear.png"><p>Sobre</p></a>
-          <div class="clear"></div>
-        </div>
         <div class="clear"></div>
-	</div>
-</div><!-- /page -->
+        </div>
+    <div class="clear"></div>
+   </div>
+</div>
 </body>
 </html>
