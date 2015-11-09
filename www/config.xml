@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <widget id="com.aplicativo.uneb" version="1.3.17" versionCode="17" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Lideres de Esperança</name>
     <description>
@@ -37,7 +37,7 @@
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
-    <gap:plugin name="org.apache.cordova.cordova-plugin-camera" />
+    <gap:plugin name="cordova-plugin-camera" />
 	<gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <icon src="res/icon.png" />
