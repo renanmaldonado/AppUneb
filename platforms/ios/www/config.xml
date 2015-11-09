@@ -37,7 +37,7 @@
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
-    <gap:plugin name="org.apache.cordova.cordova-plugin-camera" />
+    <gap:plugin name="cordova-plugin-camera" />
     <icon src="res/icon.png" />
     <icon gap:platform="ios" height="57" src="res/icons/icon-57.png" width="57" />
     <icon gap:platform="ios" height="72" src="res/icons/icon-72.png" width="72" />
