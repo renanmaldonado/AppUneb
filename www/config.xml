@@ -1,11 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns   = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.aplicativo.uneb"
-        versionCode = "17" 
-        version     = "1.3.17" >
-
-		
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.aplicativo.uneb" version="1.3.17" versionCode="17" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Lideres de Esperança</name>
     <description>
         Aplicativo da União Nordeste Brasileira da IASD
@@ -13,13 +7,11 @@
     <author email="contato@rdorval.com" href="http://rdorval.com">
         RDORVAL SOLUCOES EM TECNOLOGIA
     </author>
-	
     <content src="index.html" />
-    
-	<preference name="permissions" value="none" />
+    <preference name="permissions" value="none" />
     <preference name="Orientation" value="portrait" />
     <preference name="AllowInlineMediaPlayback" value="false" />
-	<preference name="EnableLocation" value="true" />
+    <preference name="EnableLocation" value="true" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="DisallowOverscroll" value="false" />
@@ -35,69 +27,50 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-	<preference name="Fullscreen" value="true" />
-	<preference name="webviewbounce" value="false" />
-	<preference name="ios-statusbarstyle" value="black-opaque" />
-	<preference name="exit-on-suspend" value="false" />
-    <preference name="DisallowOverscroll" value="true"/>
-	<preference name="SplashScreenDelay" value="1000" />
-	    
-	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
-    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.3.0" />
-    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.15" />
-	<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="1.0.0" />
-	<gap:plugin name="cordova-plugin-camera" source="npm" source="npm" version="1.2.0" />
-
-    <!-- Icones de cada plataforma -->
-	<icon src="res/icon.png" />
-		
-    <!-- IOS -->
-    <icon src="res/icons/icon-57.png"    gap:platform="ios"  	width="57" height="57" />
-    <icon src="res/icons/icon-72.png"    gap:platform="ios"  	width="72" height="72" />
-	<icon src="res/icons/icon-57-2x.png"   gap:platform="ios"  	width="114" height="114" />
-	<icon src="res/icons/icon-72-2x.png"   gap:platform="ios"  	width="144" height="144" />
-
-	<!-- Android -->
-    <icon src="res/icons/icon-36-ldpi.png"	gap:platform="android"  gap:qualifier="ldpi" />
-    <icon src="res/icons/icon-48-mdpi.png"	gap:platform="android"  gap:qualifier="mdpi" />
-    <icon src="res/icons/icon-72-hdpi.png"	gap:platform="android"  gap:qualifier="hdpi" />
-    <icon src="res/icons/icon-96-xhdpi.png"	gap:platform="android"	gap:qualifier="xhdpi" />
-
-    <!-- Splashes de cada plataforma -->
-	<gap:splash src="res/splash.png" />
-
-    <!-- images are determined by width and height. The following are supported -->
-	<gap:splash src="res/splash/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
-	<gap:splash src="res/splash/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
-	<gap:splash src="res/splash/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
-    <gap:splash src="res/splash/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
-    <gap:splash src="res/splash/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
-
-	<!-- iPhone 5 / iPod Touch (5th Generation) -->
-	<gap:splash src="res/splash/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
-
-	<!-- iPhone 6 -->
-	<gap:splash src="Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
-	<gap:splash src="Default-Portrait-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
-	<gap:splash src="Default-Landscape-736h@3x.png" gap:platform="ios" width="2208" height="1242" />
-    
-    <splash src="res/splash/1536-2048.png" gap:platform="ios" width="1536" height="2048"/>
-    <splash src="res/splash/2048-1536.png" gap:platform="ios" width="2048" height="1536"/>
-	
-	<!-- Android -->
-    <!-- you can use any density that exists in the Android project -->
-    <splash src="res/splash/screen-hdpi-landscape.png" gap:platform="android" density="land-hdpi"/>
-    <splash src="res/splash/screen-ldpi-landscape.png" gap:platform="android" density="land-ldpi"/>
-    <splash src="res/splash/screen-mdpi-landscape.png" gap:platform="android" density="land-mdpi"/>
-    <splash src="res/splash/screen-xhdpi-landscape.png" gap:platform="android" density="land-xhdpi"/>
-
-    <splash src="res/splash/screen-hdpi-portrait.png" gap:platform="android" density="port-hdpi"/>
-    <splash src="res/splash/screen-ldpi-portrait.png" gap:platform="android" density="port-ldpi"/>
-    <splash src="res/splash/screen-mdpi-portrait.png" gap:platform="android" density="port-mdpi"/>
-    <splash src="res/splash/screen-xhdpi-portrait.png" gap:platform="android" density="port-xhdpi"/>
-	
-	<access origin="*" />
-	<plugin name="cordova-plugin-whitelist" version="1" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenDelay" value="1000" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="0.3.4" />
+    <gap:plugin name="org.apache.cordova.cordova-plugin-camera" />
+	<gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <icon src="res/icon.png" />
+    <icon gap:platform="ios" height="57" src="res/icons/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="72" src="res/icons/icon-72.png" width="72" />
+    <icon gap:platform="ios" height="114" src="res/icons/icon-57-2x.png" width="114" />
+    <icon gap:platform="ios" height="144" src="res/icons/icon-72-2x.png" width="144" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="res/icons/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="res/icons/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="res/icons/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icons/icon-96-xhdpi.png" />
+    <gap:splash src="res/splash.png" />
+    <gap:splash gap:platform="ios" height="480" src="res/splash/screen-iphone-portrait.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/splash/screen-iphone-portrait-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="480" src="res/splash/screen-iphone-portrait.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/splash/screen-iphone-portrait-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/splash/screen-iphone-portrait-568h-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/splash/screen-iphone-portrait-568h-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1334" src="Default-667h@2x.png" width="750" />
+    <gap:splash gap:platform="ios" height="2208" src="Default-Portrait-736h@3x.png" width="1242" />
+    <gap:splash gap:platform="ios" height="1242" src="Default-Landscape-736h@3x.png" width="2208" />
+    <splash gap:platform="ios" height="2048" src="res/splash/1536-2048.png" width="1536" />
+    <splash gap:platform="ios" height="1536" src="res/splash/2048-1536.png" width="2048" />
+    <splash density="land-hdpi" gap:platform="android" src="res/splash/screen-hdpi-landscape.png" />
+    <splash density="land-ldpi" gap:platform="android" src="res/splash/screen-ldpi-landscape.png" />
+    <splash density="land-mdpi" gap:platform="android" src="res/splash/screen-mdpi-landscape.png" />
+    <splash density="land-xhdpi" gap:platform="android" src="res/splash/screen-xhdpi-landscape.png" />
+    <splash density="port-hdpi" gap:platform="android" src="res/splash/screen-hdpi-portrait.png" />
+    <splash density="port-ldpi" gap:platform="android" src="res/splash/screen-ldpi-portrait.png" />
+    <splash density="port-mdpi" gap:platform="android" src="res/splash/screen-mdpi-portrait.png" />
+    <splash density="port-xhdpi" gap:platform="android" src="res/splash/screen-xhdpi-portrait.png" />
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -111,4 +84,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <engine name="ios" spec="~3.9.2" />
 </widget>

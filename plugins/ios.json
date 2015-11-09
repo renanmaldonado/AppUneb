@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.aplicativo.uneb"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.aplicativo.uneb"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.aplicativo.uneb"
+        }
+    },
+    "dependent_plugins": {}
+}
