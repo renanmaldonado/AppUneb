@@ -4,29 +4,17 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "br.org.uneb"
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.aplicativo.uneb"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "br.org.uneb"
+            "PACKAGE_NAME": "com.aplicativo.uneb"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.aplicativo.uneb"
         }
     },
     "dependent_plugins": {}
