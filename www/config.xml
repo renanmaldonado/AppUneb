@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.aplicativo.uneb" version="1.3.17" versionCode="17" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.aplicativo.uneb" version="1.3.19" versionCode="19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="BackupWebStorage" value="cloud" />
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
